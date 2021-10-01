@@ -27,7 +27,7 @@ function resolveForm (){
     confirmed = confirm("Are these the values? "+age+" and "+nick)
     
     out = document.getElementById("result")
-    if(age.document.getElementById("form1_age").value==nick.document.getElementById("form1_nick").value){
+    if((age.value).equals(nick.value)){
         alert("Access allowed")
     } else {
         alert("Access denied")
