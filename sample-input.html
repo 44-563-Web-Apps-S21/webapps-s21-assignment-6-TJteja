@@ -7,10 +7,10 @@
 <h2>Getting input</h2>
 
 <form>
-    <label for="form1_secret">Enter your secret phrase </label>
+    <label for="form1">Enter your secret phrase </label>
     <input type ="password" id="form1_age" name="form1_age" value="let me in" min=10 max=50 step=2 value=30> <br>
 
-    <label for="form1_pharse">Enter a phrase </label>
+    <label for="form2">Enter a phrase </label>
     <input type ="text" id="form1_nick" name="form1_nick" autofocus> <br>
 
     <input type="button" onclick="processPhrase()" value="Check the phrase">
@@ -36,7 +36,7 @@ function resolveForm (){
 }
 function processPhrase(){
     console.log("Check the pharse")
-    if(form1.secret.value == form1.pharse.value) {
+    if(form1.value == form2.value) {
       alert("Access allowed");
       form1.secret.focus();
       return true;
