@@ -27,10 +27,10 @@ function resolveForm (){
     confirmed = confirm("Are these the values? "+age+" and "+nick)
     
     out = document.getElementById("result")
-    if(confirmed){
-        alert("Values were confirmed")
+    if(age.value==nick.value){
+        alert("Access allowed")
     } else {
-        alert("Values were not confirmed")
+        alert("Access denied")
     }
 }
 </script>
