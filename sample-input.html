@@ -7,74 +7,39 @@
 <h2>Getting input</h2>
 
 <form>
-    <label for="username">Enter your secret phrase </label>
-    <input type ="password" id="username" name="username" value="let me in" min=10 max=50 step=2 value=30> <br>
+    <label for="form1">Enter your secret phrase </label>
+    <input type ="password" id="form1" name="form1" value="let me in" min=10 max=50 step=2 value=30> <br>
 
-    <label for="pwd1">Enter a phrase </label>
-    <input type ="text" id="pwd1" name="pwd1" autofocus> <br>
-    <label for="pwd2">Confirm phrase </label>
-    <input type ="text" id="pwd2" name="pwd2" autofocus> <br>
+    <label for="form2">Enter a phrase </label>
+    <input type ="text" id="form2" name="form2" autofocus> <br>
 
-    <input type="button" onclick="checkForm()" value="Check the phrase">
+    <input type="button" onclick="processPhrase()" value="Check the phrase">
 </form>
 
 
-
+<p id="result">This text will be replaced </p>
 
 <script type="text/javascript"> 
 
-function checkForm(form)
-  {
-    if(form.username.value == "") {
-      alert("Error: Username cannot be blank!");
-      form.username.focus();
-      return false;
-    }
-    re = /^\w+$/;
-    if(!re.test(form.username.value)) {
-      alert("Error: Username must contain only letters, numbers and underscores!");
-      form.username.focus();
-      return false;
-    }
-
-    if(form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
-      if(form.pwd1.value.length < 6) {
-        alert("Error: Password must contain at least six characters!");
-        form.pwd1.focus();
-        return false;
-      }
-      if(form.pwd1.value == form.username.value) {
-        alert("Error: Password must be different from Username!");
-        form.pwd1.focus();
-        return false;
-      }
-      re = /[0-9]/;
-      if(!re.test(form.pwd1.value)) {
-        alert("Error: password must contain at least one number (0-9)!");
-        form.pwd1.focus();
-        return false;
-      }
-      re = /[a-z]/;
-      if(!re.test(form.pwd1.value)) {
-        alert("Error: password must contain at least one lowercase letter (a-z)!");
-        form.pwd1.focus();
-        return false;
-      }
-      re = /[A-Z]/;
-      if(!re.test(form.pwd1.value)) {
-        alert("Error: password must contain at least one uppercase letter (A-Z)!");
-        form.pwd1.focus();
-        return false;
-      }
+function resolveForm (){
+    console.log("Getting form values")
+    age = document.getElementById("form1_age").value
+    nick = document.getElementById("form1_nick").value
+    confirmed = confirm("Are these the values? "+age+" and "+nick)
+    
+    out = document.getElementById("result")
+    if(confirmed){
+        out.innerHTML = "Values were confirmed"
     } else {
-      alert("Error: Please check that you've entered and confirmed your password!");
-      form.pwd1.focus();
-      return false;
+        out.innerHTML = "Values were not confirmed"
     }
-
-    alert("You entered a valid password: " + form.pwd1.value);
-    return true;
-  }
+}
+function processPhrase(){
+    console.log("Check the pharse")
+    if(form1.value == form2.value) {
+      alert("Access allowed");
+      form1.secret.focus();
+      return true;
 
 
 }
