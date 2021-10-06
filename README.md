@@ -1,5 +1,5 @@
 # WebApps-S21-Assignment-6
 Assignment introduction Java Script and DOM<br>
-<a href="https://github.com/44-563-Web-Apps-S21/webapps-s21-assignment-6-TJteja/blob/main/pass.html">Hosted at "https://github.com/44-563-Web-Apps-S21/webapps-s21-assignment-6-TJteja/blob/main/pass.html" </a><br>
-<a href="https://github.com/44-563-Web-Apps-S21/webapps-s21-assignment-6-TJteja/blob/main/arthmetic.html">Hosted at "https://github.com/44-563-Web-Apps-S21/webapps-s21-assignment-6-TJteja/blob/main/arthmetic.html"</a><br>
-<a href="https://github.com/44-563-Web-Apps-S21/webapps-s21-assignment-6-TJteja/blob/main/car.html">Hosted at "https://github.com/44-563-Web-Apps-S21/webapps-s21-assignment-6-TJteja/blob/main/car.html"</a>
+<a href="https://44-563-web-apps-s21.github.io/webapps-s21-assignment-6-TJteja/pass.html">Hosted at "https://44-563-web-apps-s21.github.io/webapps-s21-assignment-6-TJteja/pass.html" </a><br>
+<a href="https://44-563-web-apps-s21.github.io/webapps-s21-assignment-6-TJteja/arthmetic.html">Hosted at "https://44-563-web-apps-s21.github.io/webapps-s21-assignment-6-TJteja/arthmetic.html"</a><br>
+<a href="https://44-563-web-apps-s21.github.io/webapps-s21-assignment-6-TJteja/car.html">Hosted at "https://44-563-web-apps-s21.github.io/webapps-s21-assignment-6-TJteja/car.html"</a>
