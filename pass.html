@@ -45,6 +45,9 @@
                 wrong = wrong +1
                 alert("Access denied")
                 out.innerHTML = "Wrong:" +wrong
+                if (wrong>3){
+                    alert("account locked");
+                }
             }
         }
         </script>
