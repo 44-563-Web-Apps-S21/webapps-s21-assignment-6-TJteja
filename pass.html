@@ -62,22 +62,26 @@ function resolveForm (){
         out.innerHTML = "Values were not confirmed"
     }
 }
-function newImage(img) 
-    {
-            switch (currentImage)
-            {
-                case 1:
-                    document.getElementById("image").src ="snake.jpg";
-                    currentImage++;
-                    break;
-                case 2: document.getElementById("image").src ="deer.jpg";
-                    currentImage++;
-                    break;
-                case 3: document.getElementById("image").src ="seal.jpg";
-                    currentImage = 1;
-                    break;
-                default: currentImage = 1;
-            }
+var currentimage = 1;
+
+function newImage() {
+        switch (currentimage) {
+            case 0:
+                currentImage = currentimage + 1;
+                document.getElementById("image").src = "snake.jpg"
+                break;
+            case 1:
+                currentimage += 1;
+                document.getElementById("image").src = "seal.jpg"
+                break;
+            case 2:
+                currentimage += 1;
+                document.getElementById("image").src = "deer.jpg"
+                break;
+            default:
+                currentimage = 1
+                document.getElementById("image").src = "snake.jpg"
+        }
     }
 </script>
 
